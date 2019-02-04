@@ -8,96 +8,501 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+				.center {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 50%;
+				  }
+		</style>
 	</head>
 	<body>
 				
 		<!-- Body Starts -->
-		<section id="main" class="hero is-fullheight">
-		<!-- Hero head: will stick at the top -->
-			<div class="hero-head">
-				<header class="navbar">
-				<div class="container">
-					<div class="navbar-brand">
-					<a class="navbar-item" data-target="#main">
-						<img src="./images/A.png" alt="Logo">
-						
-					</a>
-					<span class="navbar-burger burger" data-target="navbarMenuHeroC">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-					</div>
-					<div id="navbarMenuHeroC" class="navbar-menu">
-					<div class="navbar-end">
-						<a class="navbar-item is-active" data-target="#life">
-						Life
-						</a>
-						<a class="navbar-item" data-target="#work">
-						Work
-						</a>
-						<a class="navbar-item" data-target="#more">
-                        More
-						</a>
-					</div>
-					</div>
+		<header class="navbar is-fixed-top has-background-light is-transparent">
+			<div class="container ">
+				<div class="navbar-brand">
+				<a class="navbar-item is-active" id="homeB">
+					<img src="./images/A.png" alt="Logo">
+					
+				</a>
+				<span class="navbar-burger burger has-background-light" data-target="navbarMenuHeroC">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
 				</div>
-			</header>
-		</div>
-		
+				<div id="navbarMenuHeroC" class="navbar-menu">
+				<div class="navbar-end">
+					<a class="navbar-item" id="skillB">
+					Skill
+					</a>
+					<a class="navbar-item" id="workB">
+					Work
+					</a>
+					<a class="navbar-item" id="lifeB">
+					About
+					</a>
+				</div>
+				</div>
+			</div>
+		</header>
+
+
+		<section id="home" class="hero is-fullheight has-background-white-ter">
+		<!-- Hero head: will stick at the top -->
+			
 		<!-- Hero content: will be in the middle -->
-		<div class="hero-body">
-			<div class="container has-text-centered">
-				<div class="columns">
+		<div class="hero-body has-background-white-ter">
+			<div class="container has-text-centered has-background-white-ter" >
+				<div class="columns" >
 					<div class="column is-half is-offset-one-quarter">
 						<h1 class="title has-text-black" >
-							<strong id="hello" class="title is-2"></strong>
+							<strong id="hello" class="title is-2 has-text-black"></strong> 
 							<i class="em em-pray"></i>
 						</h1>
+						<div></div>
 						
-						<h2 class="subtitle is-3 has-text-justified has-text-weight-light">
-							I am <strong class="has-text-black">Ayush Shaw</strong>, an Information Technology graduate. <i class="em em-male-technologist"></i>
-						</h2>
+						
+						<h3 class="subtitle is-3 has-text-justified has-text-weight-light">
+							I am <strong class="has-text-black">Ayush Shaw</strong>, an information technology 
+							graduate <i class="em em-male-technologist"></i> interested in entrepreneurship <i class="em em-handshake"></i> and
+							Research in Artificial General Intelligence <i class="em em-robot_face"></i>.
+						</h3>
 					</div>
 				</div>
+				<div class="columns is-centered">
+						<div class="column is-2">
+							<a class="button is-medium is-success" href="">Résumé</a>
+						</div>
+						<div class="column is-2">
+							<a class="button is-medium is-info" id="contactB">Contact</a>
+						</div>
+				</div>
+				<h4 class="subtitle is-4 has-text-weight-light">
+						<strong>P.S.</strong> I'm also a freelancer.
+				</h4>
 			</div>
 		</div>
 		
 		<!-- Hero footer: will stick at the bottom -->
 		
-        </section>
-        
+		</section>
+		<div class="has-background-light">
+				<br>
+				<br>
 
-        
+		</div>
+		<div class="has-background-light">
+				<br>
+				<br>
+
+		</div>
+		
+		<section id="skill" class="has-background-light">
+			<div class="container">
+				<div class="has-background-light">
+						<br>
+						<br>
+		
+				</div>
+				<div class="columns">
+					<div class="column">
+						<h1 class="title">
+							Skill
+						</h1>
+						<p>
+							I started my career as a game developer in late 2015. But I reallized my games were limbos void of
+							any real adversarial experience that we got through games like chess. Then I started experimenting 
+							with AI meeting up with great ideas like A* Pathfinding, Agent Behaviour Trees, and more. And That's 
+							when I met with Deep Neural Networks and passion burned in my core.
+							
+							However that it is not an easy job so I try my best to improve my skills being a Medium bookworm 
+							and doing some course once in a while.
+								
+						</p>
+					</div>
+					<div class="column is-offset-1">
+						<!-- For later Work -->
+						<!-- <div class="tabs">
+							<ul>
+								<li class="is-active"><a id="deepT">DL Engineer</a></li>
+								<li><a id="gameT">Game Developer</a></li>
+								<li><a id="filmT">Film-Making</a></li>
+							</ul>
+						</div> -->
+						<div id="tabContent"class="media-content">
+							<div class="content has-text-centered">
+								<h1 class="is-1">
+									<i class="em em-male-technologist"></i>
+								</h1>
+								<h2 class="is-2">Deep Learning Engineer</h2>
+								<p>
+									As a Deep Learning Engineer, I enjoy designing new neural architechtures that recognizes patterns in the
+									data, placing special attention on better optimizations and perfect hyperparameters.
+								</p>
+								<h4 class="is-4">Languages I Speak:</h4>
+								<div class="tags is-centered"><span class="tag is-info">Python</span><span class="tag is-info">SQL</span><span class="tag is-info">JavaScript</span></div>
+							
+							
+								<h4 class="is-4">Development Tools:</h4>
+								<div class="tags is-centered"><span class="tag is-warning">GITHUB</span><span class="tag is-warning">GOOGLE CLOUD</span><span
+									 class="tag is-warning">GIT</span><span class="tag is-warning">SAGE MAKER</span><span class="tag is-warning">PIP</span><span
+									 class="tag is-warning">GOOGLE COLAB</span><span class="tag is-warning">FLOYDHUB</span><span class="tag is-warning">VSCODE</span></div>
+							
+							
+							
+								<h4 class="is-4">Frameworks:</h4>
+								<div class="tags is-centered"><span class="tag is-danger">PYTORCH</span><span class="tag is-danger">KERAS</span><span
+									 class="tag is-danger">TENSORFLOW</span><span class="tag is-danger">SONNET</span><span class="tag is-danger">NUMPY</span>
+									 <span class="tag is-danger">FLASK</span><span class="tag is-danger">POSTGRESQL</span></div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="has-background-light">
+				<br>
+				<br>
+
+		</div>
+
+		<div class="has-background-white-ter">
+				<br>
+				<br>
+
+		</div>
+		<div class="has-background-white-ter">
+				<br>
+				<br>
+
+		</div>
+
+		<section id="work" class="has-background-white-ter">
+				<div class="container">
+						<div class="has-background-white-ter">
+								<br>
+								<br>
+								
+				
+						</div>
+					<div class="columns">
+						<div class="column is-one-quarter">
+							<h1 class="title">
+								Work
+							</h1>
+							<p>
+								While completing my information technology degree, I have working on several personal projects.
+								Here are a few examples: 
+									
+							</p>
+						</div>
+						<div class="column">
+							<div class="columns">
+							  	<div class="column has-background-grey-lighter">
+								  	<a href="https://github.com/AyushShaw/dog_project/blob/master/dog_app.ipynb">
+										<div class="card has-background-grey-lighter">
+											<div class="card-image">
+												<figure class="image is-square">
+												<img src="https://raw.githubusercontent.com/AyushShaw/dog_project/c3fc482fca44feac1071001f032e593b816bb78b/images/Labrador_retriever_06457.jpg" alt="Doggo Classifier">
+												</figure>
+											</div>
+											<div class="card-content">
+												<div class="media">
+												<div class="media-content">
+													<p class="title is-4">Dog Breed Classifier</p>												  
+												</div>
+												</div>
+											
+												<div class="content">
+												<p class="has-text-black has-text-weight-light">
+													We used Keras to perform transfer learning by building a neural network architechture called doggo over 
+													VGG16 architecture. Doggo provides around 78% accuracy which improved as to VGG16's 43%.( with it's help ofcourse)
+												</p>
+														
+												<br>
+												
+												<div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">KERAS</span><span
+													class="tag is-danger">OPENCV</span>
+												</div>
+											</div>
+										</div>
+
+									</a>
+								</div>
+
+							  </div>
+							  <div class="column has-background-grey-lighter">
+								  <a href="https://github.com/AyushShaw/Simpsons_ScriptGen/blob/master/dlnd_tv_script_generation.ipynb">
+									<div class="card has-background-grey-lighter">
+										<div class="card-image">
+											<figure class="image ">
+												<img src="https://s0.geograph.org.uk/photos/54/76/547682_28eeefc6.jpg" alt="Simpsons">
+											</figure>
+										</div>
+										<div class="card-content">
+											<div class="media">
+												<div class="media-content">
+													<p class="title is-4">Simpsions TV Script Generator</p>
+												</div>
+											</div>
+										
+											<div class="content">
+												<p class="has-text-black has-text-weight-light">
+													We generated our own Simpsons TV scripts using RNNs. We used part of the Simpsons dataset of scripts from 27
+													seasons. The Neural Network generated a new TV script for a scene at Moe's Tavern, which was cryptic to say but Yet WOW!!
+												</p>
+												
+												
+												<br>
+												
+												<div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">TENSORFLOW</span><span
+													class="tag is-danger">NUMPY</span>
+												</div>
+											</div>
+										</div>
+										</div>
+									</a>
+							  </div>
+							  <div class="column has-background-grey-lighter">
+								  <a href="https://github.com/AyushShaw/a-neural-network">
+									<div class="card has-background-grey-lighter">
+											<div class="card-image">
+											  <figure class="image is-4by3">
+												<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Artificial_neural_network.svg" alt="Neural Networks">
+											  </figure>
+											</div>
+											<div class="card-content">
+											  <div class="media">												
+												<div class="media-content">
+												  <p class="title is-4">Simple Neural Network</p>
+												</div>
+											  </div>
+										  
+											  	<div class="content">
+												  	<p class="has-text-black has-text-weight-light">
+													A simple neural network Implemented using only NumPy, 
+													A simple Codebase to understand the maths of Neural Network, 
+													and a few Optimization techniques.  
+													</p>
+																					
+												<br>
+												
+												<div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">NUMPY</span>
+											  </div>
+											</div>
+										</div>
+									</a>
+							  	</div>
+							  
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="has-background-white-ter">
+					<br>
+					<br>
+	
+			</div>
+			
+
+			
+			<section id="life" class="hero has-background-light">			
+				
+				  <div class="hero-body">
+					<div class="container has-text-centered">
+							<div class="columns">
+									<div class="column is-two-thirds center">
+													  
+											  <h1 class="title is-3">About Me</h1>
+			  
+											  <figure class="image is-128x128 center">
+												  <img class="is-rounded" src="https://pbs.twimg.com/profile_images/1081452001299492864/KXk5KG7e_400x400.jpg">
+											  </figure>
+											  <br>
+											  <h2 class="subtitle is-5 has-text-justified">
+													  Hi!! I am Ayush, a <span id="age"></span> year old. I was always curiously interested in technology.<i class="em em-computer"></i> 
+													  I still remember when I was a kid and my relatives<i class="em em-man-man-girl-boy"></i> used to ask me what 
+													  I wanna do for the living which I used to answer "study computers"<i class="em em-male-technologist"></i>. But, I’m not all screens and keyboards. 
+													  I love storytelling, philosophy <i class="em em-thinking_face"></i>, film-making <i class="em em-film_projector"></i>,
+													   music, history <i class="em em-classical_building"></i>, and art and crafts <i class="em em-performing_arts"></i>. 
+													  Maybe that's the reason i love game development.
+													  
+			  
+											  </h2>							
+											  
+									</div>
+								
+							  </div>
+					</div>
+				  </div>
+								
+			</section>
+
 
 		
+
+
+			<section id="contact" class="hero is-light">
+					<div class="hero-body">
+						<div class="columns ">
+							<div class="column is-half is-offset-one-quarter has-text-centered">
+								<h1 class="title is-3 has-text-centered">
+									<strong> Let's get in touch </strong>
+								</h1>
+								<p class="content is-medium has-text-justified">
+									Need anything built, want to work together or simply want to have a chat? Drop me an e-mail at
+									<span class="btn btn-link has-text-info ">
+										<a href="mailto:ayushshaw@outlook.com " target="_blank" class="highlight-link">ayushshaw@outlook.com</a>
+									</span> and I will reply to you soon!
+								</p>
+
+								<dive class="buttons is-centered">
+									<a class="button is-dark" href="https://github.com/AyushShaw">
+										<span class="icon">
+										<i class="fab fa-github"></i>
+										</span>
+										<span>GitHub</span>
+									</a>
+									<a class="button is-link" href="https://www.linkedin.com/in/ayushshaw/">
+										<span class="icon">
+											<i class="fab fa-linkedin"></i>
+										</span>
+										<span>LinkedIn</span>
+									</a>
+									<a class="button is-info" href="https://twitter.com/AyuKez">
+										<span class="icon">
+											<i class="fab fa-twitter"></i>
+										</span>
+										<span>Twitter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</section>
+
+
+				<footer class="footer has-background-light">
+					<div class="content has-text-centered has-text-back has-background-light is-4">
+						<br>
+						<br>
+						<p class="">This website was handcrafted with <i class="em em-heart"></i> </p>
+							 
+						<p>	by Ayush Shaw </p>
+						<p>
+							<a href="https://bulma.io">
+								<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="256" height="48">
+							</a>
+						</p>
+						<p>
+							Source code on <a href="https://github.com/AyushShaw/ayushshaw.github.io"><u class="has-text-black">Github</u> </a>.
+						</p>
+					</div>
+				</footer>
+
+
+			
+
 		
-
-
-
 
 		<!-- All Other Scripts here -->
 		<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
 		<script>
+
+				// greetings typewriter 
 				var app = document.getElementById('hello');
 
 				var typewriter = new Typewriter(app, {
 					loop: true
 				});
 				
-				typewriter.typeString('Hello!!')
+				typewriter.typeString('Namaste!!')
 					.pauseFor(2500)
 					.deleteAll()
-					.typeString('Namaste!!')
+					.typeString('Hello!!')
+					.pauseFor(2500)
+					.deleteAll()
+					.typeString('Konnichiwa!!')
 					.pauseFor(2500)
 					.deleteAll()
 					.typeString('Toki!!')
 					.pauseFor(2500)
 					.start();
-		</script>
-		<!--  -->
 
+
+				
+
+				// Dynamic age 
+				var d = new Date();
+				var n = d.getFullYear();
+				var age = n -1994 - 1;
+				
+  				document.getElementById("age").innerHTML = age;
+				
+				
+				$(document).ready(function() {
+
+					// Check for click events on the navbar burger icon
+					$(".navbar-burger").click(function() {
+				  
+						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+						$(".navbar-burger").toggleClass("is-active");
+						$(".navbar-menu").toggleClass("is-active");
+				  
+					});
+				});
+
+				// Navigation JQ
+				$("#homeB").click(function() {
+					$('html,body').animate({
+						scrollTop: $("#home").offset().top},
+						'slow');
+				});
+				$("#skillB").click(function() {
+					$('html,body').animate({
+						scrollTop: $("#skill").offset().top},
+						'slow');
+				});
+				
+				$("#workB").click(function() {
+					$('html,body').animate({
+						scrollTop: $("#work").offset().top},
+						'slow');
+				});
+
+
+				$("#lifeB").click(function() {
+					$('html,body').animate({
+						scrollTop: $("#life").offset().top},
+						'slow');
+				});
+
+				$("#contactB").click(function() {
+					$('html,body').animate({
+						scrollTop: $("#contact").offset().top},
+						'slow');
+				});
+
+
+
+				
+
+
+
+				
+
+
+	</script>
+	
 
 	</body>
 </html>
